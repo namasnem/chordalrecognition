@@ -1,0 +1,613 @@
+chord_symbol,root,type,notes_spelled,notes_neutral,commonly_omitted_spelled,commonly_omitted_neutral,aliases
+C,C,maj,C E G,C E G,G,G,
+Cm,C,min,C Eb G,C Eb G,G,G,
+Cdim,C,dim,C Eb Gb,C Eb F#,,,°
+Caug,C,aug,C E G#,C E Ab,,,+
+Csus2,C,sus2,C D G,C D G,,,
+Csus4,C,sus4,C F G,C F G,,,
+C5,C,power5,C G,C G,,,
+Cadd9,C,add9,C E G D,C E G D,G,G,
+Cmadd9,C,madd9,C Eb G D,C Eb G D,G,G,m(add9)
+Cadd11,C,add11,C E G F,C E G F,G,G,
+C6,C,six,C E G A,C E G A,G,G,
+Cm6,C,msix,C Eb G A,C Eb G A,G,G,
+C6/9,C,sixnine,C E G A D,C E G A D,G,G,69
+CM7,C,maj7,C E G B,C E G B,G,G,maj7
+Cm7,C,min7,C Eb G Bb,C Eb G Bb,G,G,
+C7,C,dom7,C E G Bb,C E G Bb,G,G,
+CmM7,C,mMaj7,C Eb G B,C Eb G B,G,G,m(maj7) | minMaj7
+Cm7b5,C,half_dim,C Eb Gb Bb,C Eb F# Bb,,,ø7 | hdim7
+Cdim7,C,dim7,C Eb Gb Bbb,C Eb F# A,,,°7
+CM9,C,maj9,C E G B D,C E G B D,G,G,maj9
+Cm9,C,min9,C Eb G Bb D,C Eb G Bb D,G,G,
+C9,C,dom9,C E G Bb D,C E G Bb D,G,G,
+CM11,C,maj11,C E G B D F,C E G B D F,G E,G E,maj11
+Cm11,C,min11,C Eb G Bb D F,C Eb G Bb D F,G,G,
+C11,C,dom11,C E G Bb D F,C E G Bb D F,G E,G E,
+CM13,C,maj13,C E G B D F A,C E G B D F A,G F D,G F D,maj13
+Cm13,C,min13,C Eb G Bb D F A,C Eb G Bb D F A,G F D,G F D,
+C13,C,dom13,C E G Bb D F A,C E G Bb D F A,G F D,G F D,
+C7sus4,C,7sus4,C F G Bb,C F G Bb,G,G,sus4(7)
+C9sus4,C,9sus4,C F G Bb D,C F G Bb D,G,G,
+C7sus2,C,7sus2,C D G Bb,C D G Bb,G,G,
+C7b9,C,7b9,C E G Bb Db,C E G Bb C#,G,G,
+C7#9,C,7#9,C E G Bb D#,C E G Bb Eb,G,G,
+C7b13,C,7b13,C E G Bb Ab,C E G Bb Ab,G,G,
+C7#11,C,7#11,C E G Bb F#,C E G Bb F#,G,G,
+C7b9b13,C,7b9b13,C E G Bb Db Ab,C E G Bb C# Ab,G,G,
+C7#9b13,C,7#9b13,C E G Bb D# Ab,C E G Bb Eb Ab,G,G,
+C7b9#9,C,7b9#9,C E G Bb Db D#,C E G Bb C# Eb,G,G,
+C7b9#11,C,7b9#11,C E G Bb Db F#,C E G Bb C# F#,G,G,
+CM7#11,C,M7#11,C E G B F#,C E G B F#,G,G,maj7#11
+CM9#11,C,M9#11,C E G B D F#,C E G B D F#,G,G,maj9#11
+CM7#5,C,M7#5,C E G# B,C E Ab B,,,maj7#5 | augMaj7
+CM7b5,C,M7b5,C E Gb B,C E F# B,,,maj7b5
+C7b5,C,7b5,C E Gb Bb,C E F# Bb,,,
+C7#5,C,7#5,C E G# Bb,C E Ab Bb,,,
+CdimM7,C,dimM7,C Eb Gb B,C Eb F# B,,,°M7
+CdimM9,C,dimM9,C Eb Gb B D,C Eb F# B D,,,°M9
+CM7sus4,C,M7sus4,C F G B,C F G B,G,G,maj7sus4
+CM9sus4,C,M9sus4,C F G B D,C F G B D,G,G,maj9sus4
+C(b5),C,maj_b5,C E Gb,C E F#,,,maj(b5)
+Cm(#5),C,min_#5,C Eb G#,C Eb Ab,,,m(#5)
+C#,C#,maj,C# E# G#,C# F Ab,G#,Ab,
+C#m,C#,min,C# E G#,C# E Ab,G#,Ab,
+C#dim,C#,dim,C# E G,C# E G,,,°
+C#aug,C#,aug,C# E# G##,C# F A,,,+
+C#sus2,C#,sus2,C# D# G#,C# Eb Ab,,,
+C#sus4,C#,sus4,C# F# G#,C# F# Ab,,,
+C#5,C#,power5,C# G#,C# Ab,,,
+C#add9,C#,add9,C# E# G# D#,C# F Ab Eb,G#,Ab,
+C#madd9,C#,madd9,C# E G# D#,C# E Ab Eb,G#,Ab,m(add9)
+C#add11,C#,add11,C# E# G# F#,C# F Ab F#,G#,Ab,
+C#6,C#,six,C# E# G# A#,C# F Ab Bb,G#,Ab,
+C#m6,C#,msix,C# E G# A#,C# E Ab Bb,G#,Ab,
+C#6/9,C#,sixnine,C# E# G# A# D#,C# F Ab Bb Eb,G#,Ab,69
+C#M7,C#,maj7,C# E# G# B#,C# F Ab C,G#,Ab,maj7
+C#m7,C#,min7,C# E G# B,C# E Ab B,G#,Ab,
+C#7,C#,dom7,C# E# G# B,C# F Ab B,G#,Ab,
+C#mM7,C#,mMaj7,C# E G# B#,C# E Ab C,G#,Ab,m(maj7) | minMaj7
+C#m7b5,C#,half_dim,C# E G B,C# E G B,,,ø7 | hdim7
+C#dim7,C#,dim7,C# E G Bb,C# E G Bb,,,°7
+C#M9,C#,maj9,C# E# G# B# D#,C# F Ab C Eb,G#,Ab,maj9
+C#m9,C#,min9,C# E G# B D#,C# E Ab B Eb,G#,Ab,
+C#9,C#,dom9,C# E# G# B D#,C# F Ab B Eb,G#,Ab,
+C#M11,C#,maj11,C# E# G# B# D# F#,C# F Ab C Eb F#,G# E#,Ab F,maj11
+C#m11,C#,min11,C# E G# B D# F#,C# E Ab B Eb F#,G#,Ab,
+C#11,C#,dom11,C# E# G# B D# F#,C# F Ab B Eb F#,G# E#,Ab F,
+C#M13,C#,maj13,C# E# G# B# D# F# A#,C# F Ab C Eb F# Bb,G# F# D#,Ab F# Eb,maj13
+C#m13,C#,min13,C# E G# B D# F# A#,C# E Ab B Eb F# Bb,G# F# D#,Ab F# Eb,
+C#13,C#,dom13,C# E# G# B D# F# A#,C# F Ab B Eb F# Bb,G# F# D#,Ab F# Eb,
+C#7sus4,C#,7sus4,C# F# G# B,C# F# Ab B,G#,Ab,sus4(7)
+C#9sus4,C#,9sus4,C# F# G# B D#,C# F# Ab B Eb,G#,Ab,
+C#7sus2,C#,7sus2,C# D# G# B,C# Eb Ab B,G#,Ab,
+C#7b9,C#,7b9,C# E# G# B D,C# F Ab B D,G#,Ab,
+C#7#9,C#,7#9,C# E# G# B D##,C# F Ab B E,G#,Ab,
+C#7b13,C#,7b13,C# E# G# B A,C# F Ab B A,G#,Ab,
+C#7#11,C#,7#11,C# E# G# B F##,C# F Ab B G,G#,Ab,
+C#7b9b13,C#,7b9b13,C# E# G# B D A,C# F Ab B D A,G#,Ab,
+C#7#9b13,C#,7#9b13,C# E# G# B D## A,C# F Ab B E A,G#,Ab,
+C#7b9#9,C#,7b9#9,C# E# G# B D D##,C# F Ab B D E,G#,Ab,
+C#7b9#11,C#,7b9#11,C# E# G# B D F##,C# F Ab B D G,G#,Ab,
+C#M7#11,C#,M7#11,C# E# G# B# F##,C# F Ab C G,G#,Ab,maj7#11
+C#M9#11,C#,M9#11,C# E# G# B# D# F##,C# F Ab C Eb G,G#,Ab,maj9#11
+C#M7#5,C#,M7#5,C# E# G## B#,C# F A C,,,maj7#5 | augMaj7
+C#M7b5,C#,M7b5,C# E# G B#,C# F G C,,,maj7b5
+C#7b5,C#,7b5,C# E# G B,C# F G B,,,
+C#7#5,C#,7#5,C# E# G## B,C# F A B,,,
+C#dimM7,C#,dimM7,C# E G B#,C# E G C,,,°M7
+C#dimM9,C#,dimM9,C# E G B# D#,C# E G C Eb,,,°M9
+C#M7sus4,C#,M7sus4,C# F# G# B#,C# F# Ab C,G#,Ab,maj7sus4
+C#M9sus4,C#,M9sus4,C# F# G# B# D#,C# F# Ab C Eb,G#,Ab,maj9sus4
+C#(b5),C#,maj_b5,C# E# G,C# F G,,,maj(b5)
+C#m(#5),C#,min_#5,C# E G##,C# E A,,,m(#5)
+D,D,maj,D F# A,D F# A,A,A,
+Dm,D,min,D F A,D F A,A,A,
+Ddim,D,dim,D F Ab,D F Ab,,,°
+Daug,D,aug,D F# A#,D F# Bb,,,+
+Dsus2,D,sus2,D E A,D E A,,,
+Dsus4,D,sus4,D G A,D G A,,,
+D5,D,power5,D A,D A,,,
+Dadd9,D,add9,D F# A E,D F# A E,A,A,
+Dmadd9,D,madd9,D F A E,D F A E,A,A,m(add9)
+Dadd11,D,add11,D F# A G,D F# A G,A,A,
+D6,D,six,D F# A B,D F# A B,A,A,
+Dm6,D,msix,D F A B,D F A B,A,A,
+D6/9,D,sixnine,D F# A B E,D F# A B E,A,A,69
+DM7,D,maj7,D F# A C#,D F# A C#,A,A,maj7
+Dm7,D,min7,D F A C,D F A C,A,A,
+D7,D,dom7,D F# A C,D F# A C,A,A,
+DmM7,D,mMaj7,D F A C#,D F A C#,A,A,m(maj7) | minMaj7
+Dm7b5,D,half_dim,D F Ab C,D F Ab C,,,ø7 | hdim7
+Ddim7,D,dim7,D F Ab Cb,D F Ab B,,,°7
+DM9,D,maj9,D F# A C# E,D F# A C# E,A,A,maj9
+Dm9,D,min9,D F A C E,D F A C E,A,A,
+D9,D,dom9,D F# A C E,D F# A C E,A,A,
+DM11,D,maj11,D F# A C# E G,D F# A C# E G,A F#,A F#,maj11
+Dm11,D,min11,D F A C E G,D F A C E G,A,A,
+D11,D,dom11,D F# A C E G,D F# A C E G,A F#,A F#,
+DM13,D,maj13,D F# A C# E G B,D F# A C# E G B,A G E,A G E,maj13
+Dm13,D,min13,D F A C E G B,D F A C E G B,A G E,A G E,
+D13,D,dom13,D F# A C E G B,D F# A C E G B,A G E,A G E,
+D7sus4,D,7sus4,D G A C,D G A C,A,A,sus4(7)
+D9sus4,D,9sus4,D G A C E,D G A C E,A,A,
+D7sus2,D,7sus2,D E A C,D E A C,A,A,
+D7b9,D,7b9,D F# A C Eb,D F# A C Eb,A,A,
+D7#9,D,7#9,D F# A C E#,D F# A C F,A,A,
+D7b13,D,7b13,D F# A C Bb,D F# A C Bb,A,A,
+D7#11,D,7#11,D F# A C G#,D F# A C Ab,A,A,
+D7b9b13,D,7b9b13,D F# A C Eb Bb,D F# A C Eb Bb,A,A,
+D7#9b13,D,7#9b13,D F# A C E# Bb,D F# A C F Bb,A,A,
+D7b9#9,D,7b9#9,D F# A C Eb E#,D F# A C Eb F,A,A,
+D7b9#11,D,7b9#11,D F# A C Eb G#,D F# A C Eb Ab,A,A,
+DM7#11,D,M7#11,D F# A C# G#,D F# A C# Ab,A,A,maj7#11
+DM9#11,D,M9#11,D F# A C# E G#,D F# A C# E Ab,A,A,maj9#11
+DM7#5,D,M7#5,D F# A# C#,D F# Bb C#,,,maj7#5 | augMaj7
+DM7b5,D,M7b5,D F# Ab C#,D F# Ab C#,,,maj7b5
+D7b5,D,7b5,D F# Ab C,D F# Ab C,,,
+D7#5,D,7#5,D F# A# C,D F# Bb C,,,
+DdimM7,D,dimM7,D F Ab C#,D F Ab C#,,,°M7
+DdimM9,D,dimM9,D F Ab C# E,D F Ab C# E,,,°M9
+DM7sus4,D,M7sus4,D G A C#,D G A C#,A,A,maj7sus4
+DM9sus4,D,M9sus4,D G A C# E,D G A C# E,A,A,maj9sus4
+D(b5),D,maj_b5,D F# Ab,D F# Ab,,,maj(b5)
+Dm(#5),D,min_#5,D F A#,D F Bb,,,m(#5)
+Eb,Eb,maj,Eb G Bb,Eb G Bb,Bb,Bb,
+Ebm,Eb,min,Eb Gb Bb,Eb F# Bb,Bb,Bb,
+Ebdim,Eb,dim,Eb Gb Bbb,Eb F# A,,,°
+Ebaug,Eb,aug,Eb G B,Eb G B,,,+
+Ebsus2,Eb,sus2,Eb F Bb,Eb F Bb,,,
+Ebsus4,Eb,sus4,Eb Ab Bb,Eb Ab Bb,,,
+Eb5,Eb,power5,Eb Bb,Eb Bb,,,
+Ebadd9,Eb,add9,Eb G Bb F,Eb G Bb F,Bb,Bb,
+Ebmadd9,Eb,madd9,Eb Gb Bb F,Eb F# Bb F,Bb,Bb,m(add9)
+Ebadd11,Eb,add11,Eb G Bb Ab,Eb G Bb Ab,Bb,Bb,
+Eb6,Eb,six,Eb G Bb C,Eb G Bb C,Bb,Bb,
+Ebm6,Eb,msix,Eb Gb Bb C,Eb F# Bb C,Bb,Bb,
+Eb6/9,Eb,sixnine,Eb G Bb C F,Eb G Bb C F,Bb,Bb,69
+EbM7,Eb,maj7,Eb G Bb D,Eb G Bb D,Bb,Bb,maj7
+Ebm7,Eb,min7,Eb Gb Bb Db,Eb F# Bb C#,Bb,Bb,
+Eb7,Eb,dom7,Eb G Bb Db,Eb G Bb C#,Bb,Bb,
+EbmM7,Eb,mMaj7,Eb Gb Bb D,Eb F# Bb D,Bb,Bb,m(maj7) | minMaj7
+Ebm7b5,Eb,half_dim,Eb Gb Bbb Db,Eb F# A C#,,,ø7 | hdim7
+Ebdim7,Eb,dim7,Eb Gb Bbb Dbb,Eb F# A C,,,°7
+EbM9,Eb,maj9,Eb G Bb D F,Eb G Bb D F,Bb,Bb,maj9
+Ebm9,Eb,min9,Eb Gb Bb Db F,Eb F# Bb C# F,Bb,Bb,
+Eb9,Eb,dom9,Eb G Bb Db F,Eb G Bb C# F,Bb,Bb,
+EbM11,Eb,maj11,Eb G Bb D F Ab,Eb G Bb D F Ab,Bb G,Bb G,maj11
+Ebm11,Eb,min11,Eb Gb Bb Db F Ab,Eb F# Bb C# F Ab,Bb,Bb,
+Eb11,Eb,dom11,Eb G Bb Db F Ab,Eb G Bb C# F Ab,Bb G,Bb G,
+EbM13,Eb,maj13,Eb G Bb D F Ab C,Eb G Bb D F Ab C,Bb Ab F,Bb Ab F,maj13
+Ebm13,Eb,min13,Eb Gb Bb Db F Ab C,Eb F# Bb C# F Ab C,Bb Ab F,Bb Ab F,
+Eb13,Eb,dom13,Eb G Bb Db F Ab C,Eb G Bb C# F Ab C,Bb Ab F,Bb Ab F,
+Eb7sus4,Eb,7sus4,Eb Ab Bb Db,Eb Ab Bb C#,Bb,Bb,sus4(7)
+Eb9sus4,Eb,9sus4,Eb Ab Bb Db F,Eb Ab Bb C# F,Bb,Bb,
+Eb7sus2,Eb,7sus2,Eb F Bb Db,Eb F Bb C#,Bb,Bb,
+Eb7b9,Eb,7b9,Eb G Bb Db Fb,Eb G Bb C# E,Bb,Bb,
+Eb7#9,Eb,7#9,Eb G Bb Db F#,Eb G Bb C# F#,Bb,Bb,
+Eb7b13,Eb,7b13,Eb G Bb Db Cb,Eb G Bb C# B,Bb,Bb,
+Eb7#11,Eb,7#11,Eb G Bb Db A,Eb G Bb C# A,Bb,Bb,
+Eb7b9b13,Eb,7b9b13,Eb G Bb Db Fb Cb,Eb G Bb C# E B,Bb,Bb,
+Eb7#9b13,Eb,7#9b13,Eb G Bb Db F# Cb,Eb G Bb C# F# B,Bb,Bb,
+Eb7b9#9,Eb,7b9#9,Eb G Bb Db Fb F#,Eb G Bb C# E F#,Bb,Bb,
+Eb7b9#11,Eb,7b9#11,Eb G Bb Db Fb A,Eb G Bb C# E A,Bb,Bb,
+EbM7#11,Eb,M7#11,Eb G Bb D A,Eb G Bb D A,Bb,Bb,maj7#11
+EbM9#11,Eb,M9#11,Eb G Bb D F A,Eb G Bb D F A,Bb,Bb,maj9#11
+EbM7#5,Eb,M7#5,Eb G B D,Eb G B D,,,maj7#5 | augMaj7
+EbM7b5,Eb,M7b5,Eb G Bbb D,Eb G A D,,,maj7b5
+Eb7b5,Eb,7b5,Eb G Bbb Db,Eb G A C#,,,
+Eb7#5,Eb,7#5,Eb G B Db,Eb G B C#,,,
+EbdimM7,Eb,dimM7,Eb Gb Bbb D,Eb F# A D,,,°M7
+EbdimM9,Eb,dimM9,Eb Gb Bbb D F,Eb F# A D F,,,°M9
+EbM7sus4,Eb,M7sus4,Eb Ab Bb D,Eb Ab Bb D,Bb,Bb,maj7sus4
+EbM9sus4,Eb,M9sus4,Eb Ab Bb D F,Eb Ab Bb D F,Bb,Bb,maj9sus4
+Eb(b5),Eb,maj_b5,Eb G Bbb,Eb G A,,,maj(b5)
+Ebm(#5),Eb,min_#5,Eb Gb B,Eb F# B,,,m(#5)
+E,E,maj,E G# B,E Ab B,B,B,
+Em,E,min,E G B,E G B,B,B,
+Edim,E,dim,E G Bb,E G Bb,,,°
+Eaug,E,aug,E G# B#,E Ab C,,,+
+Esus2,E,sus2,E F# B,E F# B,,,
+Esus4,E,sus4,E A B,E A B,,,
+E5,E,power5,E B,E B,,,
+Eadd9,E,add9,E G# B F#,E Ab B F#,B,B,
+Emadd9,E,madd9,E G B F#,E G B F#,B,B,m(add9)
+Eadd11,E,add11,E G# B A,E Ab B A,B,B,
+E6,E,six,E G# B C#,E Ab B C#,B,B,
+Em6,E,msix,E G B C#,E G B C#,B,B,
+E6/9,E,sixnine,E G# B C# F#,E Ab B C# F#,B,B,69
+EM7,E,maj7,E G# B D#,E Ab B Eb,B,B,maj7
+Em7,E,min7,E G B D,E G B D,B,B,
+E7,E,dom7,E G# B D,E Ab B D,B,B,
+EmM7,E,mMaj7,E G B D#,E G B Eb,B,B,m(maj7) | minMaj7
+Em7b5,E,half_dim,E G Bb D,E G Bb D,,,ø7 | hdim7
+Edim7,E,dim7,E G Bb Db,E G Bb C#,,,°7
+EM9,E,maj9,E G# B D# F#,E Ab B Eb F#,B,B,maj9
+Em9,E,min9,E G B D F#,E G B D F#,B,B,
+E9,E,dom9,E G# B D F#,E Ab B D F#,B,B,
+EM11,E,maj11,E G# B D# F# A,E Ab B Eb F# A,B G#,B Ab,maj11
+Em11,E,min11,E G B D F# A,E G B D F# A,B,B,
+E11,E,dom11,E G# B D F# A,E Ab B D F# A,B G#,B Ab,
+EM13,E,maj13,E G# B D# F# A C#,E Ab B Eb F# A C#,B A F#,B A F#,maj13
+Em13,E,min13,E G B D F# A C#,E G B D F# A C#,B A F#,B A F#,
+E13,E,dom13,E G# B D F# A C#,E Ab B D F# A C#,B A F#,B A F#,
+E7sus4,E,7sus4,E A B D,E A B D,B,B,sus4(7)
+E9sus4,E,9sus4,E A B D F#,E A B D F#,B,B,
+E7sus2,E,7sus2,E F# B D,E F# B D,B,B,
+E7b9,E,7b9,E G# B D F,E Ab B D F,B,B,
+E7#9,E,7#9,E G# B D F##,E Ab B D G,B,B,
+E7b13,E,7b13,E G# B D C,E Ab B D C,B,B,
+E7#11,E,7#11,E G# B D A#,E Ab B D Bb,B,B,
+E7b9b13,E,7b9b13,E G# B D F C,E Ab B D F C,B,B,
+E7#9b13,E,7#9b13,E G# B D F## C,E Ab B D G C,B,B,
+E7b9#9,E,7b9#9,E G# B D F F##,E Ab B D F G,B,B,
+E7b9#11,E,7b9#11,E G# B D F A#,E Ab B D F Bb,B,B,
+EM7#11,E,M7#11,E G# B D# A#,E Ab B Eb Bb,B,B,maj7#11
+EM9#11,E,M9#11,E G# B D# F# A#,E Ab B Eb F# Bb,B,B,maj9#11
+EM7#5,E,M7#5,E G# B# D#,E Ab C Eb,,,maj7#5 | augMaj7
+EM7b5,E,M7b5,E G# Bb D#,E Ab Bb Eb,,,maj7b5
+E7b5,E,7b5,E G# Bb D,E Ab Bb D,,,
+E7#5,E,7#5,E G# B# D,E Ab C D,,,
+EdimM7,E,dimM7,E G Bb D#,E G Bb Eb,,,°M7
+EdimM9,E,dimM9,E G Bb D# F#,E G Bb Eb F#,,,°M9
+EM7sus4,E,M7sus4,E A B D#,E A B Eb,B,B,maj7sus4
+EM9sus4,E,M9sus4,E A B D# F#,E A B Eb F#,B,B,maj9sus4
+E(b5),E,maj_b5,E G# Bb,E Ab Bb,,,maj(b5)
+Em(#5),E,min_#5,E G B#,E G C,,,m(#5)
+F,F,maj,F A C,F A C,C,C,
+Fm,F,min,F Ab C,F Ab C,C,C,
+Fdim,F,dim,F Ab Cb,F Ab B,,,°
+Faug,F,aug,F A C#,F A C#,,,+
+Fsus2,F,sus2,F G C,F G C,,,
+Fsus4,F,sus4,F Bb C,F Bb C,,,
+F5,F,power5,F C,F C,,,
+Fadd9,F,add9,F A C G,F A C G,C,C,
+Fmadd9,F,madd9,F Ab C G,F Ab C G,C,C,m(add9)
+Fadd11,F,add11,F A C Bb,F A C Bb,C,C,
+F6,F,six,F A C D,F A C D,C,C,
+Fm6,F,msix,F Ab C D,F Ab C D,C,C,
+F6/9,F,sixnine,F A C D G,F A C D G,C,C,69
+FM7,F,maj7,F A C E,F A C E,C,C,maj7
+Fm7,F,min7,F Ab C Eb,F Ab C Eb,C,C,
+F7,F,dom7,F A C Eb,F A C Eb,C,C,
+FmM7,F,mMaj7,F Ab C E,F Ab C E,C,C,m(maj7) | minMaj7
+Fm7b5,F,half_dim,F Ab Cb Eb,F Ab B Eb,,,ø7 | hdim7
+Fdim7,F,dim7,F Ab Cb Ebb,F Ab B D,,,°7
+FM9,F,maj9,F A C E G,F A C E G,C,C,maj9
+Fm9,F,min9,F Ab C Eb G,F Ab C Eb G,C,C,
+F9,F,dom9,F A C Eb G,F A C Eb G,C,C,
+FM11,F,maj11,F A C E G Bb,F A C E G Bb,C A,C A,maj11
+Fm11,F,min11,F Ab C Eb G Bb,F Ab C Eb G Bb,C,C,
+F11,F,dom11,F A C Eb G Bb,F A C Eb G Bb,C A,C A,
+FM13,F,maj13,F A C E G Bb D,F A C E G Bb D,C Bb G,C Bb G,maj13
+Fm13,F,min13,F Ab C Eb G Bb D,F Ab C Eb G Bb D,C Bb G,C Bb G,
+F13,F,dom13,F A C Eb G Bb D,F A C Eb G Bb D,C Bb G,C Bb G,
+F7sus4,F,7sus4,F Bb C Eb,F Bb C Eb,C,C,sus4(7)
+F9sus4,F,9sus4,F Bb C Eb G,F Bb C Eb G,C,C,
+F7sus2,F,7sus2,F G C Eb,F G C Eb,C,C,
+F7b9,F,7b9,F A C Eb Gb,F A C Eb F#,C,C,
+F7#9,F,7#9,F A C Eb G#,F A C Eb Ab,C,C,
+F7b13,F,7b13,F A C Eb Db,F A C Eb C#,C,C,
+F7#11,F,7#11,F A C Eb B,F A C Eb B,C,C,
+F7b9b13,F,7b9b13,F A C Eb Gb Db,F A C Eb F# C#,C,C,
+F7#9b13,F,7#9b13,F A C Eb G# Db,F A C Eb Ab C#,C,C,
+F7b9#9,F,7b9#9,F A C Eb Gb G#,F A C Eb F# Ab,C,C,
+F7b9#11,F,7b9#11,F A C Eb Gb B,F A C Eb F# B,C,C,
+FM7#11,F,M7#11,F A C E B,F A C E B,C,C,maj7#11
+FM9#11,F,M9#11,F A C E G B,F A C E G B,C,C,maj9#11
+FM7#5,F,M7#5,F A C# E,F A C# E,,,maj7#5 | augMaj7
+FM7b5,F,M7b5,F A Cb E,F A B E,,,maj7b5
+F7b5,F,7b5,F A Cb Eb,F A B Eb,,,
+F7#5,F,7#5,F A C# Eb,F A C# Eb,,,
+FdimM7,F,dimM7,F Ab Cb E,F Ab B E,,,°M7
+FdimM9,F,dimM9,F Ab Cb E G,F Ab B E G,,,°M9
+FM7sus4,F,M7sus4,F Bb C E,F Bb C E,C,C,maj7sus4
+FM9sus4,F,M9sus4,F Bb C E G,F Bb C E G,C,C,maj9sus4
+F(b5),F,maj_b5,F A Cb,F A B,,,maj(b5)
+Fm(#5),F,min_#5,F Ab C#,F Ab C#,,,m(#5)
+F#,F#,maj,F# A# C#,F# Bb C#,C#,C#,
+F#m,F#,min,F# A C#,F# A C#,C#,C#,
+F#dim,F#,dim,F# A C,F# A C,,,°
+F#aug,F#,aug,F# A# C##,F# Bb D,,,+
+F#sus2,F#,sus2,F# G# C#,F# Ab C#,,,
+F#sus4,F#,sus4,F# B C#,F# B C#,,,
+F#5,F#,power5,F# C#,F# C#,,,
+F#add9,F#,add9,F# A# C# G#,F# Bb C# Ab,C#,C#,
+F#madd9,F#,madd9,F# A C# G#,F# A C# Ab,C#,C#,m(add9)
+F#add11,F#,add11,F# A# C# B,F# Bb C# B,C#,C#,
+F#6,F#,six,F# A# C# D#,F# Bb C# Eb,C#,C#,
+F#m6,F#,msix,F# A C# D#,F# A C# Eb,C#,C#,
+F#6/9,F#,sixnine,F# A# C# D# G#,F# Bb C# Eb Ab,C#,C#,69
+F#M7,F#,maj7,F# A# C# E#,F# Bb C# F,C#,C#,maj7
+F#m7,F#,min7,F# A C# E,F# A C# E,C#,C#,
+F#7,F#,dom7,F# A# C# E,F# Bb C# E,C#,C#,
+F#mM7,F#,mMaj7,F# A C# E#,F# A C# F,C#,C#,m(maj7) | minMaj7
+F#m7b5,F#,half_dim,F# A C E,F# A C E,,,ø7 | hdim7
+F#dim7,F#,dim7,F# A C Eb,F# A C Eb,,,°7
+F#M9,F#,maj9,F# A# C# E# G#,F# Bb C# F Ab,C#,C#,maj9
+F#m9,F#,min9,F# A C# E G#,F# A C# E Ab,C#,C#,
+F#9,F#,dom9,F# A# C# E G#,F# Bb C# E Ab,C#,C#,
+F#M11,F#,maj11,F# A# C# E# G# B,F# Bb C# F Ab B,C# A#,C# Bb,maj11
+F#m11,F#,min11,F# A C# E G# B,F# A C# E Ab B,C#,C#,
+F#11,F#,dom11,F# A# C# E G# B,F# Bb C# E Ab B,C# A#,C# Bb,
+F#M13,F#,maj13,F# A# C# E# G# B D#,F# Bb C# F Ab B Eb,C# B G#,C# B Ab,maj13
+F#m13,F#,min13,F# A C# E G# B D#,F# A C# E Ab B Eb,C# B G#,C# B Ab,
+F#13,F#,dom13,F# A# C# E G# B D#,F# Bb C# E Ab B Eb,C# B G#,C# B Ab,
+F#7sus4,F#,7sus4,F# B C# E,F# B C# E,C#,C#,sus4(7)
+F#9sus4,F#,9sus4,F# B C# E G#,F# B C# E Ab,C#,C#,
+F#7sus2,F#,7sus2,F# G# C# E,F# Ab C# E,C#,C#,
+F#7b9,F#,7b9,F# A# C# E G,F# Bb C# E G,C#,C#,
+F#7#9,F#,7#9,F# A# C# E G##,F# Bb C# E A,C#,C#,
+F#7b13,F#,7b13,F# A# C# E D,F# Bb C# E D,C#,C#,
+F#7#11,F#,7#11,F# A# C# E B#,F# Bb C# E C,C#,C#,
+F#7b9b13,F#,7b9b13,F# A# C# E G D,F# Bb C# E G D,C#,C#,
+F#7#9b13,F#,7#9b13,F# A# C# E G## D,F# Bb C# E A D,C#,C#,
+F#7b9#9,F#,7b9#9,F# A# C# E G G##,F# Bb C# E G A,C#,C#,
+F#7b9#11,F#,7b9#11,F# A# C# E G B#,F# Bb C# E G C,C#,C#,
+F#M7#11,F#,M7#11,F# A# C# E# B#,F# Bb C# F C,C#,C#,maj7#11
+F#M9#11,F#,M9#11,F# A# C# E# G# B#,F# Bb C# F Ab C,C#,C#,maj9#11
+F#M7#5,F#,M7#5,F# A# C## E#,F# Bb D F,,,maj7#5 | augMaj7
+F#M7b5,F#,M7b5,F# A# C E#,F# Bb C F,,,maj7b5
+F#7b5,F#,7b5,F# A# C E,F# Bb C E,,,
+F#7#5,F#,7#5,F# A# C## E,F# Bb D E,,,
+F#dimM7,F#,dimM7,F# A C E#,F# A C F,,,°M7
+F#dimM9,F#,dimM9,F# A C E# G#,F# A C F Ab,,,°M9
+F#M7sus4,F#,M7sus4,F# B C# E#,F# B C# F,C#,C#,maj7sus4
+F#M9sus4,F#,M9sus4,F# B C# E# G#,F# B C# F Ab,C#,C#,maj9sus4
+F#(b5),F#,maj_b5,F# A# C,F# Bb C,,,maj(b5)
+F#m(#5),F#,min_#5,F# A C##,F# A D,,,m(#5)
+G,G,maj,G B D,G B D,D,D,
+Gm,G,min,G Bb D,G Bb D,D,D,
+Gdim,G,dim,G Bb Db,G Bb C#,,,°
+Gaug,G,aug,G B D#,G B Eb,,,+
+Gsus2,G,sus2,G A D,G A D,,,
+Gsus4,G,sus4,G C D,G C D,,,
+G5,G,power5,G D,G D,,,
+Gadd9,G,add9,G B D A,G B D A,D,D,
+Gmadd9,G,madd9,G Bb D A,G Bb D A,D,D,m(add9)
+Gadd11,G,add11,G B D C,G B D C,D,D,
+G6,G,six,G B D E,G B D E,D,D,
+Gm6,G,msix,G Bb D E,G Bb D E,D,D,
+G6/9,G,sixnine,G B D E A,G B D E A,D,D,69
+GM7,G,maj7,G B D F#,G B D F#,D,D,maj7
+Gm7,G,min7,G Bb D F,G Bb D F,D,D,
+G7,G,dom7,G B D F,G B D F,D,D,
+GmM7,G,mMaj7,G Bb D F#,G Bb D F#,D,D,m(maj7) | minMaj7
+Gm7b5,G,half_dim,G Bb Db F,G Bb C# F,,,ø7 | hdim7
+Gdim7,G,dim7,G Bb Db Fb,G Bb C# E,,,°7
+GM9,G,maj9,G B D F# A,G B D F# A,D,D,maj9
+Gm9,G,min9,G Bb D F A,G Bb D F A,D,D,
+G9,G,dom9,G B D F A,G B D F A,D,D,
+GM11,G,maj11,G B D F# A C,G B D F# A C,D B,D B,maj11
+Gm11,G,min11,G Bb D F A C,G Bb D F A C,D,D,
+G11,G,dom11,G B D F A C,G B D F A C,D B,D B,
+GM13,G,maj13,G B D F# A C E,G B D F# A C E,D C A,D C A,maj13
+Gm13,G,min13,G Bb D F A C E,G Bb D F A C E,D C A,D C A,
+G13,G,dom13,G B D F A C E,G B D F A C E,D C A,D C A,
+G7sus4,G,7sus4,G C D F,G C D F,D,D,sus4(7)
+G9sus4,G,9sus4,G C D F A,G C D F A,D,D,
+G7sus2,G,7sus2,G A D F,G A D F,D,D,
+G7b9,G,7b9,G B D F Ab,G B D F Ab,D,D,
+G7#9,G,7#9,G B D F A#,G B D F Bb,D,D,
+G7b13,G,7b13,G B D F Eb,G B D F Eb,D,D,
+G7#11,G,7#11,G B D F C#,G B D F C#,D,D,
+G7b9b13,G,7b9b13,G B D F Ab Eb,G B D F Ab Eb,D,D,
+G7#9b13,G,7#9b13,G B D F A# Eb,G B D F Bb Eb,D,D,
+G7b9#9,G,7b9#9,G B D F Ab A#,G B D F Ab Bb,D,D,
+G7b9#11,G,7b9#11,G B D F Ab C#,G B D F Ab C#,D,D,
+GM7#11,G,M7#11,G B D F# C#,G B D F# C#,D,D,maj7#11
+GM9#11,G,M9#11,G B D F# A C#,G B D F# A C#,D,D,maj9#11
+GM7#5,G,M7#5,G B D# F#,G B Eb F#,,,maj7#5 | augMaj7
+GM7b5,G,M7b5,G B Db F#,G B C# F#,,,maj7b5
+G7b5,G,7b5,G B Db F,G B C# F,,,
+G7#5,G,7#5,G B D# F,G B Eb F,,,
+GdimM7,G,dimM7,G Bb Db F#,G Bb C# F#,,,°M7
+GdimM9,G,dimM9,G Bb Db F# A,G Bb C# F# A,,,°M9
+GM7sus4,G,M7sus4,G C D F#,G C D F#,D,D,maj7sus4
+GM9sus4,G,M9sus4,G C D F# A,G C D F# A,D,D,maj9sus4
+G(b5),G,maj_b5,G B Db,G B C#,,,maj(b5)
+Gm(#5),G,min_#5,G Bb D#,G Bb Eb,,,m(#5)
+Ab,Ab,maj,Ab C Eb,Ab C Eb,Eb,Eb,
+Abm,Ab,min,Ab Cb Eb,Ab B Eb,Eb,Eb,
+Abdim,Ab,dim,Ab Cb Ebb,Ab B D,,,°
+Abaug,Ab,aug,Ab C E,Ab C E,,,+
+Absus2,Ab,sus2,Ab Bb Eb,Ab Bb Eb,,,
+Absus4,Ab,sus4,Ab Db Eb,Ab C# Eb,,,
+Ab5,Ab,power5,Ab Eb,Ab Eb,,,
+Abadd9,Ab,add9,Ab C Eb Bb,Ab C Eb Bb,Eb,Eb,
+Abmadd9,Ab,madd9,Ab Cb Eb Bb,Ab B Eb Bb,Eb,Eb,m(add9)
+Abadd11,Ab,add11,Ab C Eb Db,Ab C Eb C#,Eb,Eb,
+Ab6,Ab,six,Ab C Eb F,Ab C Eb F,Eb,Eb,
+Abm6,Ab,msix,Ab Cb Eb F,Ab B Eb F,Eb,Eb,
+Ab6/9,Ab,sixnine,Ab C Eb F Bb,Ab C Eb F Bb,Eb,Eb,69
+AbM7,Ab,maj7,Ab C Eb G,Ab C Eb G,Eb,Eb,maj7
+Abm7,Ab,min7,Ab Cb Eb Gb,Ab B Eb F#,Eb,Eb,
+Ab7,Ab,dom7,Ab C Eb Gb,Ab C Eb F#,Eb,Eb,
+AbmM7,Ab,mMaj7,Ab Cb Eb G,Ab B Eb G,Eb,Eb,m(maj7) | minMaj7
+Abm7b5,Ab,half_dim,Ab Cb Ebb Gb,Ab B D F#,,,ø7 | hdim7
+Abdim7,Ab,dim7,Ab Cb Ebb Gbb,Ab B D F,,,°7
+AbM9,Ab,maj9,Ab C Eb G Bb,Ab C Eb G Bb,Eb,Eb,maj9
+Abm9,Ab,min9,Ab Cb Eb Gb Bb,Ab B Eb F# Bb,Eb,Eb,
+Ab9,Ab,dom9,Ab C Eb Gb Bb,Ab C Eb F# Bb,Eb,Eb,
+AbM11,Ab,maj11,Ab C Eb G Bb Db,Ab C Eb G Bb C#,Eb C,Eb C,maj11
+Abm11,Ab,min11,Ab Cb Eb Gb Bb Db,Ab B Eb F# Bb C#,Eb,Eb,
+Ab11,Ab,dom11,Ab C Eb Gb Bb Db,Ab C Eb F# Bb C#,Eb C,Eb C,
+AbM13,Ab,maj13,Ab C Eb G Bb Db F,Ab C Eb G Bb C# F,Eb Db Bb,Eb C# Bb,maj13
+Abm13,Ab,min13,Ab Cb Eb Gb Bb Db F,Ab B Eb F# Bb C# F,Eb Db Bb,Eb C# Bb,
+Ab13,Ab,dom13,Ab C Eb Gb Bb Db F,Ab C Eb F# Bb C# F,Eb Db Bb,Eb C# Bb,
+Ab7sus4,Ab,7sus4,Ab Db Eb Gb,Ab C# Eb F#,Eb,Eb,sus4(7)
+Ab9sus4,Ab,9sus4,Ab Db Eb Gb Bb,Ab C# Eb F# Bb,Eb,Eb,
+Ab7sus2,Ab,7sus2,Ab Bb Eb Gb,Ab Bb Eb F#,Eb,Eb,
+Ab7b9,Ab,7b9,Ab C Eb Gb Bbb,Ab C Eb F# A,Eb,Eb,
+Ab7#9,Ab,7#9,Ab C Eb Gb B,Ab C Eb F# B,Eb,Eb,
+Ab7b13,Ab,7b13,Ab C Eb Gb Fb,Ab C Eb F# E,Eb,Eb,
+Ab7#11,Ab,7#11,Ab C Eb Gb D,Ab C Eb F# D,Eb,Eb,
+Ab7b9b13,Ab,7b9b13,Ab C Eb Gb Bbb Fb,Ab C Eb F# A E,Eb,Eb,
+Ab7#9b13,Ab,7#9b13,Ab C Eb Gb B Fb,Ab C Eb F# B E,Eb,Eb,
+Ab7b9#9,Ab,7b9#9,Ab C Eb Gb Bbb B,Ab C Eb F# A B,Eb,Eb,
+Ab7b9#11,Ab,7b9#11,Ab C Eb Gb Bbb D,Ab C Eb F# A D,Eb,Eb,
+AbM7#11,Ab,M7#11,Ab C Eb G D,Ab C Eb G D,Eb,Eb,maj7#11
+AbM9#11,Ab,M9#11,Ab C Eb G Bb D,Ab C Eb G Bb D,Eb,Eb,maj9#11
+AbM7#5,Ab,M7#5,Ab C E G,Ab C E G,,,maj7#5 | augMaj7
+AbM7b5,Ab,M7b5,Ab C Ebb G,Ab C D G,,,maj7b5
+Ab7b5,Ab,7b5,Ab C Ebb Gb,Ab C D F#,,,
+Ab7#5,Ab,7#5,Ab C E Gb,Ab C E F#,,,
+AbdimM7,Ab,dimM7,Ab Cb Ebb G,Ab B D G,,,°M7
+AbdimM9,Ab,dimM9,Ab Cb Ebb G Bb,Ab B D G Bb,,,°M9
+AbM7sus4,Ab,M7sus4,Ab Db Eb G,Ab C# Eb G,Eb,Eb,maj7sus4
+AbM9sus4,Ab,M9sus4,Ab Db Eb G Bb,Ab C# Eb G Bb,Eb,Eb,maj9sus4
+Ab(b5),Ab,maj_b5,Ab C Ebb,Ab C D,,,maj(b5)
+Abm(#5),Ab,min_#5,Ab Cb E,Ab B E,,,m(#5)
+A,A,maj,A C# E,A C# E,E,E,
+Am,A,min,A C E,A C E,E,E,
+Adim,A,dim,A C Eb,A C Eb,,,°
+Aaug,A,aug,A C# E#,A C# F,,,+
+Asus2,A,sus2,A B E,A B E,,,
+Asus4,A,sus4,A D E,A D E,,,
+A5,A,power5,A E,A E,,,
+Aadd9,A,add9,A C# E B,A C# E B,E,E,
+Amadd9,A,madd9,A C E B,A C E B,E,E,m(add9)
+Aadd11,A,add11,A C# E D,A C# E D,E,E,
+A6,A,six,A C# E F#,A C# E F#,E,E,
+Am6,A,msix,A C E F#,A C E F#,E,E,
+A6/9,A,sixnine,A C# E F# B,A C# E F# B,E,E,69
+AM7,A,maj7,A C# E G#,A C# E Ab,E,E,maj7
+Am7,A,min7,A C E G,A C E G,E,E,
+A7,A,dom7,A C# E G,A C# E G,E,E,
+AmM7,A,mMaj7,A C E G#,A C E Ab,E,E,m(maj7) | minMaj7
+Am7b5,A,half_dim,A C Eb G,A C Eb G,,,ø7 | hdim7
+Adim7,A,dim7,A C Eb Gb,A C Eb F#,,,°7
+AM9,A,maj9,A C# E G# B,A C# E Ab B,E,E,maj9
+Am9,A,min9,A C E G B,A C E G B,E,E,
+A9,A,dom9,A C# E G B,A C# E G B,E,E,
+AM11,A,maj11,A C# E G# B D,A C# E Ab B D,E C#,E C#,maj11
+Am11,A,min11,A C E G B D,A C E G B D,E,E,
+A11,A,dom11,A C# E G B D,A C# E G B D,E C#,E C#,
+AM13,A,maj13,A C# E G# B D F#,A C# E Ab B D F#,E D B,E D B,maj13
+Am13,A,min13,A C E G B D F#,A C E G B D F#,E D B,E D B,
+A13,A,dom13,A C# E G B D F#,A C# E G B D F#,E D B,E D B,
+A7sus4,A,7sus4,A D E G,A D E G,E,E,sus4(7)
+A9sus4,A,9sus4,A D E G B,A D E G B,E,E,
+A7sus2,A,7sus2,A B E G,A B E G,E,E,
+A7b9,A,7b9,A C# E G Bb,A C# E G Bb,E,E,
+A7#9,A,7#9,A C# E G B#,A C# E G C,E,E,
+A7b13,A,7b13,A C# E G F,A C# E G F,E,E,
+A7#11,A,7#11,A C# E G D#,A C# E G Eb,E,E,
+A7b9b13,A,7b9b13,A C# E G Bb F,A C# E G Bb F,E,E,
+A7#9b13,A,7#9b13,A C# E G B# F,A C# E G C F,E,E,
+A7b9#9,A,7b9#9,A C# E G Bb B#,A C# E G Bb C,E,E,
+A7b9#11,A,7b9#11,A C# E G Bb D#,A C# E G Bb Eb,E,E,
+AM7#11,A,M7#11,A C# E G# D#,A C# E Ab Eb,E,E,maj7#11
+AM9#11,A,M9#11,A C# E G# B D#,A C# E Ab B Eb,E,E,maj9#11
+AM7#5,A,M7#5,A C# E# G#,A C# F Ab,,,maj7#5 | augMaj7
+AM7b5,A,M7b5,A C# Eb G#,A C# Eb Ab,,,maj7b5
+A7b5,A,7b5,A C# Eb G,A C# Eb G,,,
+A7#5,A,7#5,A C# E# G,A C# F G,,,
+AdimM7,A,dimM7,A C Eb G#,A C Eb Ab,,,°M7
+AdimM9,A,dimM9,A C Eb G# B,A C Eb Ab B,,,°M9
+AM7sus4,A,M7sus4,A D E G#,A D E Ab,E,E,maj7sus4
+AM9sus4,A,M9sus4,A D E G# B,A D E Ab B,E,E,maj9sus4
+A(b5),A,maj_b5,A C# Eb,A C# Eb,,,maj(b5)
+Am(#5),A,min_#5,A C E#,A C F,,,m(#5)
+Bb,Bb,maj,Bb D F,Bb D F,F,F,
+Bbm,Bb,min,Bb Db F,Bb C# F,F,F,
+Bbdim,Bb,dim,Bb Db Fb,Bb C# E,,,°
+Bbaug,Bb,aug,Bb D F#,Bb D F#,,,+
+Bbsus2,Bb,sus2,Bb C F,Bb C F,,,
+Bbsus4,Bb,sus4,Bb Eb F,Bb Eb F,,,
+Bb5,Bb,power5,Bb F,Bb F,,,
+Bbadd9,Bb,add9,Bb D F C,Bb D F C,F,F,
+Bbmadd9,Bb,madd9,Bb Db F C,Bb C# F C,F,F,m(add9)
+Bbadd11,Bb,add11,Bb D F Eb,Bb D F Eb,F,F,
+Bb6,Bb,six,Bb D F G,Bb D F G,F,F,
+Bbm6,Bb,msix,Bb Db F G,Bb C# F G,F,F,
+Bb6/9,Bb,sixnine,Bb D F G C,Bb D F G C,F,F,69
+BbM7,Bb,maj7,Bb D F A,Bb D F A,F,F,maj7
+Bbm7,Bb,min7,Bb Db F Ab,Bb C# F Ab,F,F,
+Bb7,Bb,dom7,Bb D F Ab,Bb D F Ab,F,F,
+BbmM7,Bb,mMaj7,Bb Db F A,Bb C# F A,F,F,m(maj7) | minMaj7
+Bbm7b5,Bb,half_dim,Bb Db Fb Ab,Bb C# E Ab,,,ø7 | hdim7
+Bbdim7,Bb,dim7,Bb Db Fb Abb,Bb C# E G,,,°7
+BbM9,Bb,maj9,Bb D F A C,Bb D F A C,F,F,maj9
+Bbm9,Bb,min9,Bb Db F Ab C,Bb C# F Ab C,F,F,
+Bb9,Bb,dom9,Bb D F Ab C,Bb D F Ab C,F,F,
+BbM11,Bb,maj11,Bb D F A C Eb,Bb D F A C Eb,F D,F D,maj11
+Bbm11,Bb,min11,Bb Db F Ab C Eb,Bb C# F Ab C Eb,F,F,
+Bb11,Bb,dom11,Bb D F Ab C Eb,Bb D F Ab C Eb,F D,F D,
+BbM13,Bb,maj13,Bb D F A C Eb G,Bb D F A C Eb G,F Eb C,F Eb C,maj13
+Bbm13,Bb,min13,Bb Db F Ab C Eb G,Bb C# F Ab C Eb G,F Eb C,F Eb C,
+Bb13,Bb,dom13,Bb D F Ab C Eb G,Bb D F Ab C Eb G,F Eb C,F Eb C,
+Bb7sus4,Bb,7sus4,Bb Eb F Ab,Bb Eb F Ab,F,F,sus4(7)
+Bb9sus4,Bb,9sus4,Bb Eb F Ab C,Bb Eb F Ab C,F,F,
+Bb7sus2,Bb,7sus2,Bb C F Ab,Bb C F Ab,F,F,
+Bb7b9,Bb,7b9,Bb D F Ab Cb,Bb D F Ab B,F,F,
+Bb7#9,Bb,7#9,Bb D F Ab C#,Bb D F Ab C#,F,F,
+Bb7b13,Bb,7b13,Bb D F Ab Gb,Bb D F Ab F#,F,F,
+Bb7#11,Bb,7#11,Bb D F Ab E,Bb D F Ab E,F,F,
+Bb7b9b13,Bb,7b9b13,Bb D F Ab Cb Gb,Bb D F Ab B F#,F,F,
+Bb7#9b13,Bb,7#9b13,Bb D F Ab C# Gb,Bb D F Ab C# F#,F,F,
+Bb7b9#9,Bb,7b9#9,Bb D F Ab Cb C#,Bb D F Ab B C#,F,F,
+Bb7b9#11,Bb,7b9#11,Bb D F Ab Cb E,Bb D F Ab B E,F,F,
+BbM7#11,Bb,M7#11,Bb D F A E,Bb D F A E,F,F,maj7#11
+BbM9#11,Bb,M9#11,Bb D F A C E,Bb D F A C E,F,F,maj9#11
+BbM7#5,Bb,M7#5,Bb D F# A,Bb D F# A,,,maj7#5 | augMaj7
+BbM7b5,Bb,M7b5,Bb D Fb A,Bb D E A,,,maj7b5
+Bb7b5,Bb,7b5,Bb D Fb Ab,Bb D E Ab,,,
+Bb7#5,Bb,7#5,Bb D F# Ab,Bb D F# Ab,,,
+BbdimM7,Bb,dimM7,Bb Db Fb A,Bb C# E A,,,°M7
+BbdimM9,Bb,dimM9,Bb Db Fb A C,Bb C# E A C,,,°M9
+BbM7sus4,Bb,M7sus4,Bb Eb F A,Bb Eb F A,F,F,maj7sus4
+BbM9sus4,Bb,M9sus4,Bb Eb F A C,Bb Eb F A C,F,F,maj9sus4
+Bb(b5),Bb,maj_b5,Bb D Fb,Bb D E,,,maj(b5)
+Bbm(#5),Bb,min_#5,Bb Db F#,Bb C# F#,,,m(#5)
+B,B,maj,B D# F#,B Eb F#,F#,F#,
+Bm,B,min,B D F#,B D F#,F#,F#,
+Bdim,B,dim,B D F,B D F,,,°
+Baug,B,aug,B D# F##,B Eb G,,,+
+Bsus2,B,sus2,B C# F#,B C# F#,,,
+Bsus4,B,sus4,B E F#,B E F#,,,
+B5,B,power5,B F#,B F#,,,
+Badd9,B,add9,B D# F# C#,B Eb F# C#,F#,F#,
+Bmadd9,B,madd9,B D F# C#,B D F# C#,F#,F#,m(add9)
+Badd11,B,add11,B D# F# E,B Eb F# E,F#,F#,
+B6,B,six,B D# F# G#,B Eb F# Ab,F#,F#,
+Bm6,B,msix,B D F# G#,B D F# Ab,F#,F#,
+B6/9,B,sixnine,B D# F# G# C#,B Eb F# Ab C#,F#,F#,69
+BM7,B,maj7,B D# F# A#,B Eb F# Bb,F#,F#,maj7
+Bm7,B,min7,B D F# A,B D F# A,F#,F#,
+B7,B,dom7,B D# F# A,B Eb F# A,F#,F#,
+BmM7,B,mMaj7,B D F# A#,B D F# Bb,F#,F#,m(maj7) | minMaj7
+Bm7b5,B,half_dim,B D F A,B D F A,,,ø7 | hdim7
+Bdim7,B,dim7,B D F Ab,B D F Ab,,,°7
+BM9,B,maj9,B D# F# A# C#,B Eb F# Bb C#,F#,F#,maj9
+Bm9,B,min9,B D F# A C#,B D F# A C#,F#,F#,
+B9,B,dom9,B D# F# A C#,B Eb F# A C#,F#,F#,
+BM11,B,maj11,B D# F# A# C# E,B Eb F# Bb C# E,F# D#,F# Eb,maj11
+Bm11,B,min11,B D F# A C# E,B D F# A C# E,F#,F#,
+B11,B,dom11,B D# F# A C# E,B Eb F# A C# E,F# D#,F# Eb,
+BM13,B,maj13,B D# F# A# C# E G#,B Eb F# Bb C# E Ab,F# E C#,F# E C#,maj13
+Bm13,B,min13,B D F# A C# E G#,B D F# A C# E Ab,F# E C#,F# E C#,
+B13,B,dom13,B D# F# A C# E G#,B Eb F# A C# E Ab,F# E C#,F# E C#,
+B7sus4,B,7sus4,B E F# A,B E F# A,F#,F#,sus4(7)
+B9sus4,B,9sus4,B E F# A C#,B E F# A C#,F#,F#,
+B7sus2,B,7sus2,B C# F# A,B C# F# A,F#,F#,
+B7b9,B,7b9,B D# F# A C,B Eb F# A C,F#,F#,
+B7#9,B,7#9,B D# F# A C##,B Eb F# A D,F#,F#,
+B7b13,B,7b13,B D# F# A G,B Eb F# A G,F#,F#,
+B7#11,B,7#11,B D# F# A E#,B Eb F# A F,F#,F#,
+B7b9b13,B,7b9b13,B D# F# A C G,B Eb F# A C G,F#,F#,
+B7#9b13,B,7#9b13,B D# F# A C## G,B Eb F# A D G,F#,F#,
+B7b9#9,B,7b9#9,B D# F# A C C##,B Eb F# A C D,F#,F#,
+B7b9#11,B,7b9#11,B D# F# A C E#,B Eb F# A C F,F#,F#,
+BM7#11,B,M7#11,B D# F# A# E#,B Eb F# Bb F,F#,F#,maj7#11
+BM9#11,B,M9#11,B D# F# A# C# E#,B Eb F# Bb C# F,F#,F#,maj9#11
+BM7#5,B,M7#5,B D# F## A#,B Eb G Bb,,,maj7#5 | augMaj7
+BM7b5,B,M7b5,B D# F A#,B Eb F Bb,,,maj7b5
+B7b5,B,7b5,B D# F A,B Eb F A,,,
+B7#5,B,7#5,B D# F## A,B Eb G A,,,
+BdimM7,B,dimM7,B D F A#,B D F Bb,,,°M7
+BdimM9,B,dimM9,B D F A# C#,B D F Bb C#,,,°M9
+BM7sus4,B,M7sus4,B E F# A#,B E F# Bb,F#,F#,maj7sus4
+BM9sus4,B,M9sus4,B E F# A# C#,B E F# Bb C#,F#,F#,maj9sus4
+B(b5),B,maj_b5,B D# F,B Eb F,,,maj(b5)
+Bm(#5),B,min_#5,B D F##,B D G,,,m(#5)
