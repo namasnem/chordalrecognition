@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { CANONICAL_NOTES } from "../lib/chords";
 import "./KeyboardModal.css";
 
@@ -21,6 +21,8 @@ export default function KeyboardModal({
   onModeChange,
   onToggleNote,
 }: KeyboardModalProps) {
+  const modalRef = useRef<HTMLDivElement>(null);
+
   // Handle Escape key to close modal
   useEffect(() => {
     if (!isOpen) return;
@@ -39,9 +41,8 @@ export default function KeyboardModal({
   useEffect(() => {
     if (!isOpen) return;
 
-    const modalElement = document.querySelector('.modal[role="dialog"]') as HTMLElement;
-    if (modalElement) {
-      modalElement.focus();
+    if (modalRef.current) {
+      modalRef.current.focus();
     }
   }, [isOpen]);
 
@@ -62,6 +63,7 @@ export default function KeyboardModal({
         aria-labelledby="modal-title"
         tabIndex={-1}
         onClick={(e) => e.stopPropagation()}
+        ref={modalRef}
       >
         <div className="modal-header">
           <h2 id="modal-title">Keyboard Interface</h2>

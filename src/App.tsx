@@ -133,7 +133,7 @@ export default function App() {
           </div>
         )}
         {isLoading ? (
-          <div style={{ padding: "2rem", textAlign: "center" }}>Loading chord dictionary...</div>
+          <div className="loading-message">Loading chord dictionary...</div>
         ) : (
           <>
         <div className="target-chord">{targetSymbol}</div>

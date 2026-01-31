@@ -60,9 +60,10 @@ export default function MidiConnector({ onNoteOn }: MidiConnectorProps) {
   // Clean up MIDI access on unmount
   useEffect(() => {
     return () => {
-      if (midiAccessRef.current) {
-        midiAccessRef.current.onstatechange = null;
-        midiAccessRef.current.inputs.forEach((input) => {
+      const access = midiAccessRef.current;
+      if (access) {
+        access.onstatechange = null;
+        access.inputs.forEach((input) => {
           input.onmidimessage = null;
         });
       }

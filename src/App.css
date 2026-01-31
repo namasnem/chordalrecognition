@@ -150,6 +150,11 @@
   color: #c33;
 }
 
+.loading-message {
+  padding: 2rem;
+  text-align: center;
+}
+
 @media (max-width: 600px) {
   .card {
     padding: 36px 24px;
