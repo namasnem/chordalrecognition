@@ -1,0 +1,77 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 18, 35, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+}
+
+.modal {
+  background: #f7f8fb;
+  border-radius: 24px;
+  padding: 24px 28px 28px;
+  width: min(520px, 90vw);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-family: "Georgia", "Times New Roman", serif;
+}
+
+.modal-close {
+  border: none;
+  background: #ea6a4e;
+  color: #000;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.modal-mode {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.mode-button {
+  border: none;
+  background: #f2b08b;
+  color: #000;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.mode-button.active {
+  background: #f07b52;
+}
+
+.keyboard-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.keyboard-key {
+  border: none;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 14px 10px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 2px #d5dbe8;
+}
