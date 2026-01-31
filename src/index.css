@@ -1,0 +1,19 @@
+:root {
+  font-family: "Arial", sans-serif;
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f4f6f9;
+  background-image: radial-gradient(#dfe3eb 1px, transparent 0);
+  background-size: 18px 18px;
+}
+
+button {
+  font-family: inherit;
+}
