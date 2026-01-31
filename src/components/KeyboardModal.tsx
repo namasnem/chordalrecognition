@@ -7,6 +7,7 @@ export type KeyboardMode = "input" | "omitted";
 type KeyboardModalProps = {
   isOpen: boolean;
   mode: KeyboardMode;
+  selectedNotes: Set<number>;
   onClose: () => void;
   onModeChange: (mode: KeyboardMode) => void;
   onToggleNote: (pc: number) => void;
@@ -17,6 +18,7 @@ const NOTE_PCS = CANONICAL_NOTES.map((_, index) => index);
 export default function KeyboardModal({
   isOpen,
   mode,
+  selectedNotes,
   onClose,
   onModeChange,
   onToggleNote,
@@ -102,9 +104,10 @@ export default function KeyboardModal({
             <button
               key={pc}
               type="button"
-              className="keyboard-key"
+              className={selectedNotes.has(pc) ? "keyboard-key selected" : "keyboard-key"}
               onClick={() => onToggleNote(pc)}
               aria-label={`Toggle note ${CANONICAL_NOTES[pc]}`}
+              aria-pressed={selectedNotes.has(pc)}
             >
               {CANONICAL_NOTES[pc]}
             </button>

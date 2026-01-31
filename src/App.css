@@ -29,6 +29,27 @@
   margin-bottom: 24px;
 }
 
+.target-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.target-controls .action-button {
+  margin: 0;
+}
+
+.target-select {
+  padding: 12px 16px;
+  border-radius: 999px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
 .label {
   font-size: 18px;
   font-weight: 600;
@@ -81,6 +102,15 @@
   color: #000;
   display: block;
   margin: 12px auto;
+}
+
+.action-button.subtle {
+  background: #f2b08b;
+}
+
+.action-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 .action-button.strong {
@@ -162,5 +192,9 @@
 
   .target-chord {
     font-size: 52px;
+  }
+
+  .target-controls {
+    flex-direction: column;
   }
 }

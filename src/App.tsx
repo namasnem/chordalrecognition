@@ -22,6 +22,7 @@ type AnswerResult = {
 
 export default function App() {
   const [chords, setChords] = useState<Record<string, ChordDef>>({});
+  const [chordList, setChordList] = useState<ChordDef[]>([]);
   const [targetSymbol, setTargetSymbol] = useState("Cm7");
   const [inputNotesPc, setInputNotesPc] = useState<Set<number>>(new Set());
   const [omittedNotesPc, setOmittedNotesPc] = useState<Set<number>>(new Set());
@@ -47,6 +48,7 @@ export default function App() {
         }
         const mapped = buildChordMap(parsed);
         setChords(mapped);
+        setChordList(parsed);
         if (!mapped[targetSymbol]) {
           const firstSymbol = parsed[0]?.symbol;
           if (firstSymbol) {
@@ -65,6 +67,13 @@ export default function App() {
   }, []);
 
   const targetChord = chords[targetSymbol];
+  const chordSymbols = useMemo(() => chordList.map((chord) => chord.symbol), [chordList]);
+
+  useEffect(() => {
+    setInputNotesPc(new Set());
+    setOmittedNotesPc(new Set());
+    setAnswerResult(null);
+  }, [targetSymbol]);
 
   const inputNotes = useMemo(
     () => Array.from(inputNotesPc).sort((a, b) => a - b).map(pcToCanonical),
@@ -122,6 +131,30 @@ export default function App() {
   };
 
   const omittedSuggestions = targetChord?.omitNeutralPc ?? [];
+  const selectedKeyboardNotes = keyboardMode === "input" ? inputNotesPc : omittedNotesPc;
+
+  const handleTargetChange = (symbol: string) => {
+    if (!symbol || symbol === targetSymbol) {
+      return;
+    }
+    setTargetSymbol(symbol);
+  };
+
+  const handleRandomChord = () => {
+    if (chordSymbols.length === 0) {
+      return;
+    }
+    const nextSymbol = chordSymbols[Math.floor(Math.random() * chordSymbols.length)];
+    if (nextSymbol) {
+      setTargetSymbol(nextSymbol);
+    }
+  };
+
+  const handleReset = () => {
+    setInputNotesPc(new Set());
+    setOmittedNotesPc(new Set());
+    setAnswerResult(null);
+  };
 
   return (
     <div className="app">
@@ -137,6 +170,29 @@ export default function App() {
         ) : (
           <>
         <div className="target-chord">{targetSymbol}</div>
+
+        <div className="label">Target Chord</div>
+        <div className="target-controls">
+          <select
+            className="target-select"
+            value={targetSymbol}
+            onChange={(event) => handleTargetChange(event.target.value)}
+            disabled={chordSymbols.length === 0}
+            aria-label="Select target chord"
+          >
+            {chordSymbols.map((symbol) => (
+              <option key={symbol} value={symbol}>
+                {symbol}
+              </option>
+            ))}
+          </select>
+          <button className="action-button subtle" type="button" onClick={handleRandomChord}>
+            Random Chord
+          </button>
+          <button className="action-button subtle" type="button" onClick={handleReset}>
+            Clear Input
+          </button>
+        </div>
 
         <div className="label">Input Chord</div>
         <div className="chip-row">
@@ -157,11 +213,11 @@ export default function App() {
 
         <MidiConnector onNoteOn={(pc) => toggleNote(pc, "input")} />
 
-        <button className="action-button strong" type="button" onClick={handleAnswer}>
+        <button className="action-button strong" type="button" onClick={handleAnswer} disabled={!targetChord}>
           Answer
         </button>
 
-        <div className="label">Input Commonly Omitted Chords</div>
+        <div className="label">Input Commonly Omitted Notes</div>
         <div className="chip-row">
           {omittedSuggestions.length === 0 ? (
             <span className="chip chip-empty">No suggested omissions</span>
@@ -230,6 +286,7 @@ export default function App() {
       <KeyboardModal
         isOpen={isKeyboardOpen}
         mode={keyboardMode}
+        selectedNotes={selectedKeyboardNotes}
         onClose={() => setIsKeyboardOpen(false)}
         onModeChange={setKeyboardMode}
         onToggleNote={(pc) => toggleNote(pc, keyboardMode)}

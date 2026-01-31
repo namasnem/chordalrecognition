@@ -75,3 +75,8 @@
   cursor: pointer;
   box-shadow: inset 0 0 0 2px #d5dbe8;
 }
+
+.keyboard-key.selected {
+  background: #64d77e;
+  box-shadow: inset 0 0 0 2px #1f7a36;
+}
