@@ -128,14 +128,7 @@ export default function App() {
       <div className="card">
         <h1>Chordal Recognition</h1>
         {loadError && (
-          <div className="error-banner" style={{ 
-            padding: "1rem", 
-            marginBottom: "1rem", 
-            backgroundColor: "#fee", 
-            border: "1px solid #fcc",
-            borderRadius: "4px",
-            color: "#c33"
-          }}>
+          <div className="error-banner">
             <strong>Error:</strong> {loadError}
           </div>
         )}

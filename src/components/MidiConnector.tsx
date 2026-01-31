@@ -8,15 +8,19 @@ export default function MidiConnector({ onNoteOn }: MidiConnectorProps) {
   const [status, setStatus] = useState("not connected");
   const midiAccessRef = useRef<MIDIAccess | null>(null);
 
+  const createMidiMessageHandler = (callback: (pc: number) => void) => {
+    return (event: MIDIMessageEvent) => {
+      const [statusByte, note, velocity] = event.data;
+      const command = statusByte & 0xf0;
+      if (command === 0x90 && velocity > 0) {
+        callback(note % 12);
+      }
+    };
+  };
+
   const attachInputHandlers = (access: MIDIAccess) => {
     access.inputs.forEach((input) => {
-      input.onmidimessage = (event) => {
-        const [statusByte, note, velocity] = event.data;
-        const command = statusByte & 0xf0;
-        if (command === 0x90 && velocity > 0) {
-          onNoteOn(note % 12);
-        }
-      };
+      input.onmidimessage = createMidiMessageHandler(onNoteOn);
     });
   };
 
@@ -40,13 +44,7 @@ export default function MidiConnector({ onNoteOn }: MidiConnectorProps) {
         if (port.type === "input") {
           if (port.state === "connected") {
             // Attach handler to newly connected input
-            (port as MIDIInput).onmidimessage = (midiEvent) => {
-              const [statusByte, note, velocity] = midiEvent.data;
-              const command = statusByte & 0xf0;
-              if (command === 0x90 && velocity > 0) {
-                onNoteOn(note % 12);
-              }
-            };
+            (port as MIDIInput).onmidimessage = createMidiMessageHandler(onNoteOn);
           } else if (port.state === "disconnected") {
             // Clean up handler for disconnected input
             (port as MIDIInput).onmidimessage = null;

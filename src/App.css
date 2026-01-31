@@ -141,6 +141,15 @@
   margin: 6px 0;
 }
 
+.error-banner {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #fee;
+  border: 1px solid #fcc;
+  border-radius: 4px;
+  color: #c33;
+}
+
 @media (max-width: 600px) {
   .card {
     padding: 36px 24px;
