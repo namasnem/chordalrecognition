@@ -28,19 +28,37 @@ export default function App() {
   const [isKeyboardOpen, setIsKeyboardOpen] = useState(false);
   const [keyboardMode, setKeyboardMode] = useState<KeyboardMode>("input");
   const [answerResult, setAnswerResult] = useState<AnswerResult | null>(null);
+  const [loadError, setLoadError] = useState<string | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const load = async () => {
-      const response = await fetch(csvUrl);
-      const text = await response.text();
-      const parsed = parseCsv(text);
-      const mapped = buildChordMap(parsed);
-      setChords(mapped);
-      if (!mapped[targetSymbol]) {
-        const firstSymbol = parsed[0]?.symbol;
-        if (firstSymbol) {
-          setTargetSymbol(firstSymbol);
+      try {
+        setIsLoading(true);
+        setLoadError(null);
+        const response = await fetch(csvUrl);
+        if (!response.ok) {
+          throw new Error(`Failed to load chord dictionary: ${response.status} ${response.statusText}`);
         }
+        const text = await response.text();
+        const parsed = parseCsv(text);
+        if (!parsed || parsed.length === 0) {
+          throw new Error("Chord dictionary is empty or invalid");
+        }
+        const mapped = buildChordMap(parsed);
+        setChords(mapped);
+        if (!mapped[targetSymbol]) {
+          const firstSymbol = parsed[0]?.symbol;
+          if (firstSymbol) {
+            setTargetSymbol(firstSymbol);
+          }
+        }
+      } catch (error) {
+        const message = error instanceof Error ? error.message : "Failed to load chord dictionary";
+        setLoadError(message);
+        console.error("CSV load error:", error);
+      } finally {
+        setIsLoading(false);
       }
     };
     void load();
@@ -109,6 +127,22 @@ export default function App() {
     <div className="app">
       <div className="card">
         <h1>Chordal Recognition</h1>
+        {loadError && (
+          <div className="error-banner" style={{ 
+            padding: "1rem", 
+            marginBottom: "1rem", 
+            backgroundColor: "#fee", 
+            border: "1px solid #fcc",
+            borderRadius: "4px",
+            color: "#c33"
+          }}>
+            <strong>Error:</strong> {loadError}
+          </div>
+        )}
+        {isLoading ? (
+          <div style={{ padding: "2rem", textAlign: "center" }}>Loading chord dictionary...</div>
+        ) : (
+          <>
         <div className="target-chord">{targetSymbol}</div>
 
         <div className="label">Input Chord</div>
@@ -195,6 +229,8 @@ export default function App() {
               </div>
             </div>
           </div>
+        )}
+        </>
         )}
       </div>
 
